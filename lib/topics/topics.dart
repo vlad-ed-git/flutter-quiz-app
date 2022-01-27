@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizme/shared/bottom_nav.dart';
 
 
 class TopicsScreen extends StatelessWidget {
@@ -6,6 +7,9 @@ class TopicsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(),
+      bottomNavigationBar: const BottomNavBar(),
+    );
   }
 }
