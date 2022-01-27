@@ -1,4 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:quizme/routes.dart';
 import 'firebase_options.dart';
 import 'package:flutter/material.dart';
 
@@ -30,11 +31,13 @@ class _State extends State<MyApp> {
         }
 
         if (snapshot.connectionState == ConnectionState.done) {
-          return const Text('Firebase initialized');
+          return MaterialApp(
+            routes: appRoutes,
+          );
         }
 
         return const Text('Loading Firebase Init');
       },
     );
-  } 
+  }
 }
