@@ -36,5 +36,5 @@ class _State extends State<MyApp> {
         return const Text('Loading Firebase Init');
       },
     );
-  }
+  } 
 }
