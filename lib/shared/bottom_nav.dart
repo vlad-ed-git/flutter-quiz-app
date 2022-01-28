@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quizme/theme.dart';
 
 class BottomNavItem {
@@ -26,9 +25,9 @@ class BottomNavItem {
 
 class BottomNavItems {
   static var items = [
-    BottomNavItem(FontAwesomeIcons.graduationCap, 'Topics', '/'),
-    BottomNavItem(FontAwesomeIcons.bolt, 'About', '/about'),
-    BottomNavItem(FontAwesomeIcons.userCircle, 'Profile', '/profile')
+    BottomNavItem(Icons.school, 'Topics', '/'),
+    BottomNavItem(Icons.info, 'About', '/about'),
+    BottomNavItem(Icons.account_circle, 'Profile', '/profile')
   ];
 
   static void onItemClicked(BuildContext context, int itemIndex) {

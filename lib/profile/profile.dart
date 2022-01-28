@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizme/theme.dart';
 
 
 class ProfileScreen extends StatelessWidget {
@@ -7,7 +8,8 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Profile", style: appTheme.textTheme.headline6,),),
     );
   }
 }
